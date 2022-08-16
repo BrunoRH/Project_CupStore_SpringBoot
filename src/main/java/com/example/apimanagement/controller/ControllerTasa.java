@@ -40,7 +40,7 @@ public class ControllerTasa {
     @DeleteMapping("/{id}")
     private ResponseEntity<Object> deleteTasa(@PathVariable("id") Long id){
         serviceTasa.deleteTasa(id);
-        return new ResponseEntity<>("Alumno is deleted successsfully", HttpStatus.OK);
+        return new ResponseEntity<>("Tasa was deleted successsfully", HttpStatus.OK);
     }
     @GetMapping("/{id}")
     private ResponseEntity<Object> getAlumno(@PathVariable("id") Long id){
